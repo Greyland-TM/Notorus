@@ -38,4 +38,4 @@ const SectionTours = () => (
     </main>
 );
 
-export default SectionTours
+export default SectionTours;

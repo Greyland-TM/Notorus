@@ -2,6 +2,7 @@ import './App.scss';
 // import GridDemo from './Grid/Grid';
 import SectionTours from './Components/SectionTours';
 import Features from './Components/SectionFeatures';
+import Popular from './Components/SectionPopular';
 import crownImg from './Media/logo-white.png';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     
       <SectionTours></SectionTours>
       <Features></Features>
+      <Popular></Popular>
       
       </body>
     </div>
