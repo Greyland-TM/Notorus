@@ -3,7 +3,7 @@ import Card from './cards';
 
 const Popular = () => (
     <div>
-        <section className='section-tours'>
+        <section className='section-tours' id='popular-tours'>
             <div className='u-center-txt u-margin-bottom-big'>
                 <h2 className="heading-secondary">Most popular tours</h2>
             </div>

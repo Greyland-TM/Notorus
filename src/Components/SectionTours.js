@@ -5,7 +5,7 @@ import imgThrid from '../Media/nat-3-large.jpg';
 
 const SectionTours = () => (
     <main>
-        <section className="section-about">
+        <section className="section-about" id='section-tours'>
             <div className='u-center-txt u-margin-bottom-big'>
                 <h2 className="heading-secondary">Exciting tours for adventurous people</h2>
             </div>

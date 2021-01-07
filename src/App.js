@@ -7,11 +7,14 @@ import Stories from './Components/Stories';
 import Header from './Components/Header';
 import Booking from './Components/Booking';
 import Footer from './Components/Footer';
+import Navigation from './Components/Navigation';
+import Popup from './Components/Popup';
 
 function App() {
   return (
     <div>
       <body>
+        <Navigation></Navigation>
         <Header></Header>
         <SectionTours></SectionTours>
         <Features></Features>
@@ -19,6 +22,7 @@ function App() {
         <Stories></Stories>
         <Booking></Booking>
         <Footer></Footer>
+        <Popup></Popup>
       </body>
     </div>
   );
