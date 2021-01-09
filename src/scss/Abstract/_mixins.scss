@@ -1,14 +1,32 @@
 @mixin clearFix {
-    &::after {
-      content: '';
-      clear: both;
-      display: table;
-    }
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
   }
+}
 
-  @mixin centerElement {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@mixin centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Quary orde -- Base + typography > general layout + grid + page layout > components
+
+// Media quary manager
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content }; //600px
   }
+  @if $breakpoint == tab {
+    @media (max-width: 56.25em) { @content }; //900px
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) { @content }; //1200px
+  }
+  @if $breakpoint == big-desk {
+    @media (min-width: 112.5em) { @content }; //1800px
+  }
+}

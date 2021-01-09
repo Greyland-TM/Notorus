@@ -1,6 +1,4 @@
 .navigation {
-    
-
     &__checkbox {
         display: none;
     }
@@ -109,7 +107,6 @@
             background-color: $color-dark-gray-3;
             display: inline-block;
             transition: all .2s;
-           
         }
 
         &::before,
