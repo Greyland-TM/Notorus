@@ -10,22 +10,27 @@
         }
     }
 
+    @include respond(tab) {
+        max-width: 30rem;
+    }
+
     @include clearFix();
 
     [class^='col-'] {  
-        height: $grid-height;
         float: left;  
         
         &:not(:last-child) {
-            margin-right: $gutter-horizontal;
+            margin-bottom: $gutter-horizontal;
 
             @include respond(tab) {
                 margin-right: 0 !important;
+                margin-bottom: $gutter-vertical-small;
             }
         }
 
         @include respond(tab) {
             width: 100% !important;
+            height: 1200%
         }
     }
 

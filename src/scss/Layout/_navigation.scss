@@ -14,6 +14,11 @@
         z-index: 2000;
         text-align: center;
         cursor: pointer;
+
+        @include respond (tab) {
+            top: 1.5rem;
+            right: 1.5rem;
+        }
     }
 
     &__background {
@@ -27,6 +32,11 @@
         z-index: 1000;
         box-shadow: 0 1rem 2rem rgba($color-black, .8);
         transition: transform .5s;
+
+        @include respond (tab) {
+            top: 1.5rem;
+            right: 1.5rem;
+        }
     }
 
     &__nav {

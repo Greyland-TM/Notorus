@@ -1,3 +1,7 @@
+.feature-box-container {
+    height: 25rem;
+}
+
 .feature-box {
     background-color: rgba($color-white, .8);
     font-size: 1rem;
@@ -7,18 +11,21 @@
     box-shadow: 0 1.5rem 4rem ($color-black, .15);
     margin-top: -9rem;
     transition: transform .3s;
+
+    height: 100%;
+
+    @include respond(tab) {
+        margin: 1rem;
+    }
     
     &__icon {
         font-size: 3rem;
-        padding-top: 4em;
+        padding-top: 0;
         margin-bottom: .5rem;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
-    }
-
-    &__text {
-
+        height: 100%;
     }
 
     &:hover {
