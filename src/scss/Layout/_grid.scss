@@ -12,6 +12,7 @@
 
     @include respond(tab) {
         max-width: 30rem;
+        padding: 0 2rem;git add .col-1-of-2
     }
 
     @include clearFix();
@@ -20,7 +21,7 @@
         float: left;  
         
         &:not(:last-child) {
-            margin-bottom: $gutter-horizontal;
+            margin-right: $gutter-horizontal;
 
             @include respond(tab) {
                 margin-right: 0 !important;
