@@ -3,6 +3,14 @@
     padding: 15rem 0;
     margin-top: -20vh;
     height: 1000px;
+
+    @include respond(big-desk) {
+        padding: 8 0;
+    }
+
+    @include respond(tab-land) {
+        padding: 8 0;
+    }
 }
 
 .section-features {
@@ -18,6 +26,10 @@
 
     & > *{
         transform: skewY(7deg);
+    }
+
+    @include respond(tab-land) {
+
     }
 }
 

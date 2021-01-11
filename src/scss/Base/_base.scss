@@ -10,7 +10,7 @@
     font-size: 100%;
 
     @include respond(big-desk) {
-      font-size: 112.5%; // 1re = 18px, 18/16
+      font-size: 112.5%; // 1rem = 18px, 18/16
     }
 
     @include respond(tab-land) {

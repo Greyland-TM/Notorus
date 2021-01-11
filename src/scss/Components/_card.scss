@@ -1,14 +1,13 @@
 .card {
-    perspective: 15rem;
+    perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 30rem;
-    position: relative;
-    text-align: center;
+    // position: relative;
+    // text-align: center;
 
     // Functionality
     &__side {
-        background-color: rgba(0, 140, 255, 0.829);
         height: 30rem;
         transition: all .8s ease;
         position: absolute;
@@ -92,7 +91,7 @@
         color: white;
         position: fixed;
         top: 7rem;
-        right: .5rem;
+        right: 1rem;
         width: 65%;
     }
 

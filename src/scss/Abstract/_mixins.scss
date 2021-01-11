@@ -17,6 +17,9 @@
 
 // Media quary manager
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media (max-width: 21.875em) { @content }; //400px
+  }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content }; //600px
   }
@@ -27,6 +30,6 @@
     @media (max-width: 75em) { @content }; //1200px
   }
   @if $breakpoint == big-desk {
-    @media (min-width: 112.5em) { @content }; //1800px
+    @media (max-width: 112.5em) { @content }; //1800px
   }
 }
