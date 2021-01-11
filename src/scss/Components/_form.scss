@@ -1,4 +1,10 @@
 .form {
+    width: 75%;
+    
+    @include respond(phone) {
+        width: 100%;
+        margin: 0;
+    }
 
     &__group {
 
@@ -20,6 +26,11 @@
         width: 80%;
         display: block;
         transition: all .3s;
+
+        @include respond(tab) {
+            width: 100%;
+            padding-top: 0;
+        }
 
         &:focus {
             outline: none;
@@ -62,6 +73,11 @@
     &__radio-group {
         width: 50%;
         display: inline-block;
+
+        @include respond(tab) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
 
     &__radio-lable {

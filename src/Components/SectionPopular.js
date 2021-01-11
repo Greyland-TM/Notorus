@@ -64,7 +64,7 @@ const Popular = () => (
                 ></Card>
             </div>
 
-            <div className="u-center-txt u-margin-top">
+            <div className="u-center-txt u-margin-top-small">
                 <a href="#" className="btn btn--green">Discover all tours</a>
             </div>
         </section>
