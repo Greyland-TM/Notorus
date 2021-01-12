@@ -16,8 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile.sass": "node-sass app.scss css/style.comp.css"
+    "watch:sass": "node-sass src/app.scss src/css/style.comp.css -w",
+    "compile.sass": "node-sass src/app.scss src/css/style.comp.css"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "concat": "^1.0.3",
     "node-sass": "^4.14.1",
     "sass": "^1.32.0",
     "sass-loader": "^10.1.0"

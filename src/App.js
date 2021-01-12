@@ -1,4 +1,5 @@
 import './App.scss';
+// import './css/style.comp.css'
 // import GridDemo from './Grid/Grid';
 import SectionTours from './Components/SectionTours';
 import Features from './Components/SectionFeatures';
