@@ -53,6 +53,7 @@
 }
 
 .book {
+    width: 100%;
     background-image: linear-gradient(105deg, 
         rgba($color-white, .9) 0%, 
         rgba($color-white, .9) 50%, 
@@ -83,9 +84,9 @@
         width: 50%;
         padding: 3rem;
 
-        @include respond (contact) {
-            width: 65%;
-        }
+        // @include respond (contact) {
+        //     width: 100%;
+        // }
 
         @include respond (tab) {
             width: 100%;

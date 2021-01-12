@@ -26,13 +26,17 @@
         width: 9rem;
         float: left;
         background-color: rgb(132, 214, 207);
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-
+        border-radius: 100%;
+        overflow: hidden;
         transform: translateX(-1rem) skewX(12deg);
+
+        @supports (clip-path: pollygon(0, 0)) or (-webkit-clip-path: pollygon(0, 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
 
         @include respond(phone) {
             transform: translateX(-1rem) skewX(0);
@@ -48,7 +52,7 @@
 
     &__txt {
         transform: skewX(12deg);
-        
+
         @include respond(phone) {
             transform: skewX(0);
         }
